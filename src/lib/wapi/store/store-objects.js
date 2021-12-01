@@ -227,7 +227,7 @@ export const storeObjects = [
       module.getStatus && module.setMyStatus ? module : null
   },
   {
-    id: 'ChatState',
+    id: 'ChatStates',
     conditions: (module) =>
       module.sendChatStatePaused &&
       module.sendChatStateRecording &&
