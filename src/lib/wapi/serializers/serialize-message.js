@@ -96,7 +96,7 @@ export const _serializeMessageObj = (obj) => {
     chat: _chat,
     isOnline: _chat.isOnline,
     lastSeen: _chat.lastSeen,
-    quotedMsgObj: obj._quotedMsgObj,
+    quotedMsgObj: WAPI._serializeMessageObj(obj['_quotedMsgObj']),
     mediaData: window.WAPI._serializeRawObj(obj.mediaData),
     caption: obj.caption,
     deprecatedMms3Url: obj.deprecatedMms3Url,
